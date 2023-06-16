@@ -16,7 +16,7 @@ import { img } from "./gulp/tasks/img.js";
 import { svg } from "./gulp/tasks/svgSprite.js";
 import { htaccess } from "./gulp/tasks/htaccess.js";
 import { otfToTtf, ttfToWoff, fonstStyle } from "./gulp/tasks/fonts.js";
-import { server } from "./gulp/tasks/server.js";
+// import { server } from "./gulp/tasks/server.js";
 
 function watcher() {
   gulp.watch(path.watch.html, html);
@@ -41,6 +41,7 @@ const baseTasks = gulp.parallel(html, scss, js, img)
 // @task: fonts.js + svgSprite.js
 // const baseTasks = gulp.series(fonts, svgSprite, gulp.parallel(html, scss, js, img, svg))
 
-const dev = gulp.series(reset, htaccess, baseTasks, gulp.parallel(watcher, server));
+// const dev = gulp.series(reset, htaccess, baseTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(reset, htaccess, baseTasks, watcher)
 
 gulp.task('default', dev);
