@@ -1,0 +1,99 @@
+.main {
+
+    &-bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        background: url(../images/bg/first-screen__bgc.png);
+        height: 100%;
+        width: 100%;
+        margin-bottom: 150px;
+    }
+}
+
+.main-swiper {
+}
+
+.swiper {
+
+        &-wrapper {
+        }
+
+        &-slide {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &-wrap {
+
+            &__text {
+                max-width: 600px;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 140%;
+                color: #FFFFFF;
+                margin-bottom: 60px;
+            }
+
+            &__btn {
+                cursor: pointer;
+                display: inline-block;
+                padding: 15px 30px;
+                border: 1px solid #fff;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+                color: #FFFFFF;
+                transition: 0.3s ease;
+
+                &:hover {
+                    background: #fff;
+                    color:#1840A7;
+                    
+                }
+            }
+        }
+
+        &-group {
+
+            &__undertext {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                color: #FFFFFF;
+                max-width: 250px;
+                width: 100%;
+            }
+        }
+
+        &-container {
+            // display: flex;
+            // align-items: center;
+            // justify-content: end;
+            // margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 30px;
+
+            &__circle240 {
+                position: absolute;
+                z-index: 5;  
+                top: 0;
+                right: 0;
+                transform: translate(0%, -100%);
+            }
+
+            &__number {
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                right: 0;
+                transform: translate(-30%, -250%);
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 140%;
+            }
+     }
+}
