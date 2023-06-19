@@ -18,3 +18,13 @@ new Swiper('.main-swiper', {
         // },
         speed: 1000,
   });
+
+
+//   News Company
+const btn = document.querySelector('.main-news__btn');
+const item = document.querySelectorAll('.news-item');
+
+btn.addEventListener('click' , function() {
+    btn.innerHTML = "Скрыть"
+})
+
