@@ -257,10 +257,16 @@
         height: 100%;
 
         & .item {
+            cursor: pointer;
             max-height: 100%;
             background: #1840A7;
             padding: 30px 60px;
             max-width: 450px;
+            transition: 0.5s ease;
+
+            &:hover {
+              background: #091c4c;  
+            }
     
             &__icon {
                 max-width: 100px;
@@ -307,6 +313,15 @@
     border: 2px solid rgba(24, 64, 167, 0.5);
     padding: 24px;
     margin-bottom: 80px;
+    transition: 0.5s ease;
+
+    &:hover {
+        background: #1840a7;
+
+        .news-item__title, .news-item__text {
+                color: #FFFFFF;
+        }
+    }
 
     &__picture img{
         width: 100%;
@@ -319,6 +334,7 @@
         line-height: 140%;
         color: #333333;
         margin-bottom: 20px;
+        
     }
 
     &__text {
@@ -328,6 +344,8 @@
         color: #333333;
     }
 }
+
+
 
 .hidden {
     display: none;
