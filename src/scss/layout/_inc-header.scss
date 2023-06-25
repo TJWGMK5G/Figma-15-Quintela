@@ -1,10 +1,12 @@
 .header {
     padding: 30px 0px 0px 0px;
     color: #FFFFFF;
+    margin-bottom: 150px;
+
+   
 
     &-content {
-        margin-bottom: 150px;
-
+        
     }
 
     &-top {
@@ -76,6 +78,10 @@
         border-bottom: 1px solid #fff;
         padding-bottom: 25px;
     }
+}
+
+.header-newbg {  
+    background: #1840A7;
 }
 
 .menu-bar {

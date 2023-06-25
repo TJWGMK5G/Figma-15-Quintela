@@ -29,27 +29,29 @@ const item = document.querySelectorAll('.main-news-item');
 
 let flag = false;
 
-btn.addEventListener('click' , function() {
-    flag = !flag
-    if (flag == true) {
-        btn.innerHTML = "Скрыть"
-    } else {
-        btn.innerHTML = 'Открыть'
-    }   
-})
+if (btn == true) {
 
-item.forEach(function (i) {
-       btn.addEventListener('click' , function () {
-        i.classList.toggle("active");
-       })
-})
+    btn.addEventListener('click' , function() {
+        flag = !flag
+        if (flag == true) {
+            btn.innerHTML = "Скрыть"
+        } else {
+            btn.innerHTML = 'Открыть'
+        }   
+    })
+    
+    item.forEach(function (i) {
+           btn.addEventListener('click' , function () {
+            i.classList.toggle("active");
+           })
+    })
+
+}
 
 
-// Добавление бг цвет для всех последующий страниц, кроме главной 
-// Если класс personal на странице есть, то у хедера появляется background-color 
-// if (document.querySelector('.popup-personal') == true) {
-//     хедеру добавить цвет (создаём новый класс в котором указываем css стиль bg-color и навешиваем на хедер)
-//     document.querySelector('')
-// } else {
-//     (document.querySelector('.popup-personal') == false)
-// }
+// На определённых страницах меняется bg шапки
+if (document.querySelector('.personal') == true) {
+    document.querySelector('.header').classList.add('header-newbg')
+} else {
+    document.querySelector('.personal') == false
+}
