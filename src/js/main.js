@@ -50,8 +50,11 @@ if (btn == true) {
 
 
 // На определённых страницах меняется bg шапки
-if (document.querySelector('.personal') == true) {
+if (document.querySelector('.main-swiper') == false) {
     document.querySelector('.header').classList.add('header-newbg')
-} else {
-    document.querySelector('.personal') == false
-}
+ } 
+//  else {
+//     document.querySelector('.main-swiper') == true
+// }
+
+// console.log('Ебанина!')

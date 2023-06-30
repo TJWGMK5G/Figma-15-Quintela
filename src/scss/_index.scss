@@ -9,26 +9,59 @@
         height: 100%;
         width: 100%;
         margin-bottom: 150px;
+
+        @media(max-width:996.99px) {
+            max-height: 700px;
+        }
     }
 
     &-information {
         margin-bottom: 150px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 100px;
+        }
+        @media(max-width:556.99px) {
+            margin-bottom: 60px;
+        }
     }
 
     &-swiper {
         margin-bottom: 450px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 250px;
+        }
     }
 
     &-mechanism {
         margin-bottom: 150px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 100px;
+        }
+        @media(max-width:556.99px) {
+            margin-bottom: 60px;
+        }
     }
 
     &-cards {
         margin-bottom: 150px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 100px;
+        }
+        @media(max-width:556.99px) {
+            margin-bottom: 60px;
+        }
     } 
 
     &-news {
         margin-bottom: 150px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 100px;
+        }
     }
 }
 
@@ -42,6 +75,10 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+
+            @media(max-width:996.99px) {
+                padding-top: 0;
+            }
         }
 
         &-wrap {
@@ -138,6 +175,18 @@
     height: 100%;
     margin-bottom: 24px;
     transition: 0.5s ease;
+    gap: 20px;
+
+    @media(max-width:1100.99px) {
+        padding: 20px 15px;
+    }
+
+    @media(max-width:996.99px) {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
 
     &:hover {
         background: #1840A7;
@@ -211,6 +260,12 @@
     &-buttons {
         text-align: center;
 
+        @media(max-width:425px) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
         &-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -239,6 +294,16 @@
         line-height: 140%;
         text-align: center;
         margin-bottom: 80px;
+
+        @media(max-width:996.99px) {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        @media(max-width:550.99px) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -247,6 +312,10 @@
         padding: 20px 40px;
         display: inline-block;
         margin-bottom: 80px;
+
+        @media(max-width:996.99px) {
+            margin-bottom: 40px;
+        }
     }
 
     &-block {
@@ -256,6 +325,10 @@
         gap: 24px;
         height: 100%;
 
+        @media(max-width:650.99px) {
+            flex-direction: column;
+        }
+
         & .item {
             cursor: pointer;
             max-height: 100%;
@@ -263,6 +336,10 @@
             padding: 30px 60px;
             max-width: 450px;
             transition: 0.5s ease;
+
+            @media(max-width:996.99px) {
+                padding: 15px 20px;
+            }
 
             &:hover {
               background: #091c4c;  
@@ -294,6 +371,11 @@
         text-align: center;
         color: #333333;
         margin-bottom: 80px;
+
+        @media(max-width:996.99px) {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
     }
 
     &__btn {
@@ -307,6 +389,11 @@
         padding: 15px 30px;
         background: #1840A7;
 
+        @media(max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -316,6 +403,14 @@
     padding: 24px;
     margin-bottom: 80px;
     transition: 0.5s ease;
+
+    @media(max-width:768.99px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:425.99px) {
+        margin-bottom: 10px;
+    }
 
     &:hover {
         background: #1840a7;
@@ -662,3 +757,8 @@
 
 
 
+.hidden996 {
+    @media(max-width:996.99px) {
+        display: none;
+    }
+}
